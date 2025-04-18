@@ -1,6 +1,6 @@
-# Frontend Mentor – [Challenge Name]
+# Frontend Mentor – [Officelite Comming Soon Site]
 
-![Status](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
+![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)
 
 <details>
   <summary>Other status options</summary>
@@ -14,7 +14,7 @@
 </details>
 <br />
 
-This is my solution for the [Challenge Name](https://www.frontendmentor.io/challenges/...) challenge from Frontend Mentor.
+This is my solution for the [Officelite Comming Soon Site](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g) challenge from Frontend Mentor.
 
 ![Screenshot](./src/assets/images/screenshot.png)
 
@@ -22,7 +22,7 @@ This is my solution for the [Challenge Name](https://www.frontendmentor.io/chall
 
 ## 🔗 Live demo
 
-👉 [View deployed version](https://my-demo.netlify.app)
+👉 [View deployed version](https://pj-fm-ocs.netlify.app)
 
 ---
 

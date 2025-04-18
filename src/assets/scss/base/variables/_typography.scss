@@ -1,1 +1,18 @@
-$font-weight-bold: 500;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$font-family-base: 'Kumbh Sans', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-xs: 1rem; //16px
+$font-size-s: 1.125rem;
+$font-size-m: 1.25rem;
+$font-size-l: 1.5rem;
+$font-size-xl: 1.75rem;
+$font-size-2xl: 2rem;
+$font-size-3xl: 3rem;
+$font-size-4xl: 3.5rem;
+$font-size-5xl: 3.75rem;
+$font-size-6xl: 5rem;

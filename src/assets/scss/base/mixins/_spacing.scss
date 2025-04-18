@@ -1,0 +1,14 @@
+@use '../variables/spacing' as s;
+@use '../variables/breakpoints' as b;
+
+@mixin header-padding {
+  padding: 46px 0 0 0;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    padding: 72px 39px 0 39px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) {
+    padding: 81px 165px 0 165px;
+  }
+}

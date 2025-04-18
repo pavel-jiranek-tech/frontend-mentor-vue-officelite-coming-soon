@@ -1,0 +1,25 @@
+@use '../base/variables/index' as v;
+@use '../base/mixins/index' as m;
+
+.base-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include m.header-padding;
+
+  &__logo {
+    height: 32px;
+  }
+}
+
+@media (min-width: v.$breakpoint-tablet) {
+  .base-header {
+    justify-content: left;
+  }
+}
+
+@media (min-width: v.$breakpoint-desktop) {
+  .base-header {
+    justify-content: left;
+  }
+}

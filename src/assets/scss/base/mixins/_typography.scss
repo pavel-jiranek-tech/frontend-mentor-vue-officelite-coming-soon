@@ -1,5 +1,123 @@
 @use '../variables/typography' as typo;
+@use '../variables/breakpoints' as b;
 
-@mixin text-preset-1 {
+@mixin typo-h1 {
+  font-family: typo.$font-family-base;
   font-weight: typo.$font-weight-bold;
+  font-size: 40px;
+  line-height: 48px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@mixin typo-h2 {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-bold;
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@mixin typo-h3 {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-bold;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase; //*
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 48px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 16px;
+    line-height: 48px;
+  }
+}
+
+@mixin typo-body1 {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-regular;
+  font-size: 16px;
+  line-height: 26px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@mixin typo-body2 {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-regular;
+  font-size: 16px;
+  line-height: 28px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@mixin typo-counter {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-bold;
+  font-size: 32px;
+  line-height: 48px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 56px;
+    line-height: 48px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 56px;
+    line-height: 48px;
+  }
+}
+
+@mixin typo-counter-label {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-bold;
+  font-size: 12px;
+  line-height: 28px;
+
+  @media (min-width: b.$breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (min-width: b.$breakpoint-desktop) { //*
+    font-size: 16px;
+    line-height: 28px;
+  }
 }

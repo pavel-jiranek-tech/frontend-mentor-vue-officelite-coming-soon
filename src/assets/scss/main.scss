@@ -1,5 +1,7 @@
 @use './base/variables/index' as v;
 @use './base/mixins/index' as m;
+@use './components/base-header';
+@use './components/cutdown';
 
 /* RESET */
 * {
@@ -9,26 +11,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
-  background-color: v.$light-gray;
-  color: v.$dark-blue;
-  @include m.flex-center;
-  min-height: 100vh;
-}
-
-.card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-
-  &__title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  &__description {
-    font-size: 0.95rem;
-    color: v.$grayish-blue;
-  }
+  font-family: v.$font-family-base;
+  //@include m.flex-center;
+  //min-height: 100vh;
 }

@@ -1,20 +1,9 @@
-<!-- src/App.vue -->
 <template>
-  <div class="app">
-    <h1>Officelite Coming Soon</h1>
-    <!-- Později: <BaseHeader />, <MainContent />, <Footer /> -->
-  </div>
-  <template>
+  <BaseLayout>
     <router-view />
-  </template>
+  </BaseLayout>
 </template>
 
 <script setup lang="ts">
-// Zatím žádná logika
+import BaseLayout from './layouts/BaseLayout.vue';
 </script>
-
-<style scoped>
-.app {
-  padding: 2rem;
-}
-</style>
