@@ -1,0 +1,5 @@
+@use '../variables/typography' as typo;
+
+@mixin text-preset-1 {
+  font-weight: typo.$font-weight-bold;
+}
