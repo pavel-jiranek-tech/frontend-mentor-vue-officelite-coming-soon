@@ -1,0 +1,14 @@
+@use "sass:color";
+@use "sass:meta";
+
+@function color-with-opacity($color, $alpha) {
+  @if meta.type-of($color) == 'color' {
+    $h: color.channel($color, "hue", $space: hsl);
+    $s: color.channel($color, "saturation", $space: hsl);
+    $l: color.channel($color, "lightness", $space: hsl);
+    @return hsla($h, $s, $l, $alpha);
+  }
+
+  @warn "⚠️ Passed value `#{$color}` is not a valid color.";
+  @return null;
+}

@@ -52,7 +52,7 @@
               placeholder="Company"
               class="form__text-field"
             />
-            <button class="form__submit button">Get on the list</button>
+            <BaseButton variant="primary" type="submit">Get on the list</BaseButton>
           </form>
         </div>
       </div>
@@ -62,4 +62,5 @@
 
 <script setup lang="ts">
 import Cutdown from '@/components/Cutdown.vue';
+import BaseButton from '@/components/BaseButton.vue';
 </script>

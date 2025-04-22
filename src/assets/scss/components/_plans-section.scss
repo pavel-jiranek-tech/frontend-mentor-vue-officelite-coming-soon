@@ -1,0 +1,77 @@
+@use '../base/variables/index' as v;
+@use '../base/mixins/index' as m;
+
+.plans {
+  background-image: url('@/assets/images/plans-bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 24px 100px 24px;
+    position: relative;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (min-width: v.$breakpoint-tablet) {
+  .plans {
+    background-image: url('@/assets/images/plans-bg-tablet.svg');
+
+    &__items {
+      
+    }
+  }
+}
+
+@media (min-width: v.$breakpoint-desktop) {
+  .plans {
+    background-image: url('@/assets/images/plans-bg-desktop.svg');
+
+    &__wrapper {
+      padding: 0 165px 91px 165px;
+      gap: 82px;
+    }
+
+    &__items {
+      flex-direction: row;
+    }
+
+    &__footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: unset;
+      width: 100%;
+    }
+  }
+}

@@ -3,9 +3,11 @@
     <p class="cutdown__coming-label">
       Coming <time datetime="2020-11-04" class="cutdown__coming-date">4 nov 2020</time>
     </p>
-    <div class="cutdown__unit" v-for="(unit, index) in units" :key="index">
-      <div class="cutdown__unit-number">{{ unit.value }}</div>
-      <div class="cutdown__unit-label">{{ unit.label }}</div>
+    <div class="cutdown__wrapper">
+      <div class="cutdown__unit" v-for="(unit, index) in units" :key="index">
+        <div class="cutdown__unit-number">{{ unit.value }}</div>
+        <div class="cutdown__unit-label">{{ unit.label }}</div>
+      </div>
     </div>
   </div>
 </template>

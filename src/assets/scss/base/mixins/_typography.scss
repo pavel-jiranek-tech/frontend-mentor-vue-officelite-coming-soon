@@ -4,12 +4,12 @@
 @mixin typo-h1 {
   font-family: typo.$font-family-base;
   font-weight: typo.$font-weight-bold;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 56px;
+  line-height: 64px;
 
   @media (min-width: b.$breakpoint-tablet) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 56px;
+    line-height: 64px;
   }
 
   @media (min-width: b.$breakpoint-desktop) {
@@ -96,12 +96,12 @@
 
   @media (min-width: b.$breakpoint-tablet) {
     font-size: 56px;
-    line-height: 48px;
+    line-height: 56px;
   }
 
   @media (min-width: b.$breakpoint-desktop) { //*
     font-size: 56px;
-    line-height: 48px;
+    line-height: 56px;
   }
 }
 
@@ -120,4 +120,11 @@
     font-size: 16px;
     line-height: 28px;
   }
+}
+
+@mixin typo-button {
+  font-family: typo.$font-family-base;
+  font-weight: typo.$font-weight-bold;
+  font-size: 16px;
+  line-height: 28px;
 }

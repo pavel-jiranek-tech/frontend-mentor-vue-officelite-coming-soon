@@ -1,0 +1,95 @@
+@use '../base/variables/index' as v;
+@use '../base/mixins/index' as m;
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 40px;
+
+  background-color: v.$color-white;
+  border-radius: 13px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    width: 100%;
+    @include m.typo-h2;
+  }
+
+  &__price {
+    margin-bottom: 8px;
+    @include m.typo-h1;
+  }
+
+  &__users {
+    margin-bottom: 56px;
+    @include m.typo-body2;
+  }
+}
+
+@media (min-width: v.$breakpoint-tablet) {
+  .pricing-card {
+    justify-content: left;
+    align-items: center;
+    padding: 48px;
+    padding-right: 100px;
+    text-align: left;
+
+    &__inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__price {
+      margin-bottom: 4px;
+    }
+
+    &__users {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: v.$breakpoint-desktop) {
+  .pricing-card {
+    padding: 40px;
+    text-align: center;
+
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__price {
+      margin-bottom: 8px;
+      @include m.typo-h1;
+    }
+
+    &__users {
+      margin-bottom: 56px;
+    }
+  }
+}

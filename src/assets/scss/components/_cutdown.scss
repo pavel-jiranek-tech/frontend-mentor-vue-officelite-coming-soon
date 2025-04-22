@@ -3,12 +3,25 @@
 
 .cutdown {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 13px;
+  gap: 18px;
 
   &__coming-label {
+    color: v.$color-neutral-900;
     @include m.typo-h3;
+  }
+  &__coming-date {
+    color: v.$color-primary-600;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
   }
 
   &__unit {
@@ -16,40 +29,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    background-color: gray;
     width: 72px;
     height: 92px;
+    border-radius: 13px;
+    background-color: v.$color-primary-600-10;
 
     &-number {
       color: v.$color-primary-600;
       @include m.typo-counter;
     }
     &-label {
-      color: v.$color-neutral-900;
+      color: v.$color-neutral-900-50;
       @include m.typo-counter-label;
     }
   }
 
-  &__coming-label {
-    color: v.$color-neutral-900;
-  }
-  &__coming-date {
-    color: v.$color-primary-600;
-  }
-
   &--dark {
+    .cutdown__unit {
+      background-color: v.$color-neutral-900;
+    }
+
     .cutdown__coming-label {
       color: v.$color-white;
     }
+
     .cutdown__unit-number {
       color: v.$color-white;
+    }
+    
+    .cutdown__unit-label {
+      color: v.$color-white-50;
     }
   }
 }
 
 @media (min-width: v.$breakpoint-tablet) {
   .cutdown {
+    gap: 8px;
+
+    &__wrapper {
+      gap: 16px;
+    }
+
     &__unit {
       width: 100px;
       height: 128px;
@@ -57,26 +78,9 @@
   }
 }
 
-/*
-  <div class="cutdown cutdown--dark">
-    <p class="cutdown__coming-label">
-      Coming <time datetime="2020-11-04" class="cutdown__coming-date">4 nov 2020</time>
-    </p>
-    <div class="cutdown__unit">
-      <div class="cutdown__unit-number">47</div>
-      <div class="cutdown__unit-label">days</div>
-    </div>
-    <div class="cutdown__unit">
-      <div class="cutdown__unit-number">07</div>
-      <div class="cutdown__unit-label">hours</div>
-    </div>
-    <div class="cutdown__unit">
-      <div class="cutdown__unit-number">56</div>
-      <div class="cutdown__unit-label">min</div>
-    </div>
-    <div class="cutdown__unit">
-      <div class="cutdown__unit-number">14</div>
-      <div class="cutdown__unit-label">sec</div>
-    </div>
-  </div>
-*/
+@media (min-width: v.$breakpoint-desktop) {
+  .cutdown {
+    align-items: start;
+    gap: 0px;
+  }
+}

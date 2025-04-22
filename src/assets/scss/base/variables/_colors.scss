@@ -1,13 +1,20 @@
+@use '../mixins/colors' as c;
+
 // Basic white
 $color-white: hsl(0, 0%, 100%); //#FFFFFF
+$color-white-50: c.color-with-opacity($color-white, 0.5);
 
 // Primary blue (CTA)
 $color-primary-600: hsl(228, 100%, 66%); //#5175FF;
+$color-primary-600-10: c.color-with-opacity($color-primary-600, 0.1);
+$color-primary-600-15: c.color-with-opacity($color-primary-600, 0.1526);
+$color-primary-600-25: c.color-with-opacity($color-primary-600, 0.25);
 $color-primary-400: hsl(228, 100%, 75%); //#829CFF;
 
 // Neutral / dark gray
 $color-neutral-950: hsl(229, 22%, 19%); //#25293A;
 $color-neutral-900: hsl(228, 22%, 26%); //#333950;
+$color-neutral-900-50: c.color-with-opacity($color-neutral-900, 0.5);
 $color-neutral-600: hsl(227, 13%, 52%); //#747B95;
 
 // State (error)
